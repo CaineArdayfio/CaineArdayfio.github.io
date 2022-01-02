@@ -2,28 +2,38 @@
 <html>
 <head>
     <link href="css/style.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="scripts/jquery.smoothState.js"></script>
+    <script src="scripts/scripts.js"></script>
 </head>
-<body>
+<body id="main">
     <div class="sidenav">
         <a href="#">About</a>
         <a href="#">Services</a>
         <a href="#">Clients</a>
         <a href="#">Contact</a>
     </div>
-    
-    <div id="page1">
-        &nbsp;
-        <div id="header">
-            <h1>
-                CAINE
-                <br/>
-                ARDAYFIO
-            </h1>
+
+
+    <!-- Home page -->
+    <div class="m-scene" id="page1">
+        <div class="m-header scene_element scene_element--fadeoutright">
+            &nbsp;
+            <div id="header">
+                <h1>
+                    CAINE
+                    <br/>
+                    ARDAYFIO
+                </h1>
+            </div>
         </div>
     </div>
-    <div id="page2">
-        &nbsp;
-        <h1>CAINE ARDAYFIO</h1>
+    <!-- Detail page -->
+    <div class="m-scene" id="page2">
+        <div class="m-right-panel m-page scene_element scene_element--fadeoutleft">
+            &nbsp;
+            <h1>CAINE ARDAYFIO</h1>
+        </div>
     </div>
 </body>
 </html>
