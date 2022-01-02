@@ -1,20 +1,29 @@
-/*
-;(function ($) {
+$(function(){
     'use strict';
-    var content  = $('#main').smoothState({
-          // onStart runs as soon as link has been activated
-          onStart : {
-            
-            // Set the duration of our animation
-            duration: 250,
-            
-            // Alterations to the page
-            render: function () {
-  
-              // Quickly toggles a class and restarts css animations
-              content.toggleAnimationClass('is-exiting');
+    var $page = $('#main'),
+        options = {
+          debug: true,
+          prefetch: true,
+          cacheLength: 2,
+          onStart: {
+            duration: 400, // Duration of our animation
+            render: function ($container) {
+              // Add your CSS animation reversing class
+              $container.addClass('is-exiting');
+              // Restart your animation
+              smoothState.restartCSSAnimations();
+            }
+          },
+          onReady: {
+            duration: 0,
+            render: function ($container, $newContent) {
+              // Remove your CSS animation reversing class
+              $container.removeClass('is-exiting');
+              // Inject the new content
+              $container.html($newContent);
             }
           }
-        }).data('smoothState'); // makes public methods available
-  })(jQuery);
-  */
+        },
+        smoothState = $page.smoothState(options).data('smoothState');
+  });
+  

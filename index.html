@@ -1,21 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/keyframes.css" rel="stylesheet">
+    <link href="css/layout.css" rel="stylesheet">
+    <link href="css/pageTransitions.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="scripts/jquery.smoothState.js"></script>
-    <script src="scripts/scripts.js"></script>
 </head>
-<body id="main">
-    <div class="sidenav">
-        <a href="#">About</a>
-        <a href="#">Services</a>
-        <a href="#">Clients</a>
-        <a href="#">Contact</a>
-    </div>
+<body>
+    <div class="index m-scene" id="main">
+        <div class="m-landing-layout" id="page1">
+          <div class="m-header scene_element scene_element--fadein">
+            &nbsp;
+            <div id="header">
+                <h1>
+                    CAINE
+                    <br/>
+                    ARDAYFIO
+                </h1>
+            </div>
+          </div>
+        </div>
+      </div>
 
-
-    <!-- Home page -->
+    <!--
     <div class="m-scene" id="page1">
         <div class="m-header scene_element scene_element--fadeoutright">
             &nbsp;
@@ -28,12 +36,22 @@
             </div>
         </div>
     </div>
-    <!-- Detail page -->
     <div class="m-scene" id="page2">
         <div class="m-right-panel m-page scene_element scene_element--fadeoutleft">
             &nbsp;
             <h1>CAINE ARDAYFIO</h1>
         </div>
     </div>
+    -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="scripts/jquery.smoothState.js"></script>
+    <script src="scripts/scripts.js"></script>
+    <script>
+        var delayInMilliseconds = 2000; //1 second
+
+        setTimeout(function() {
+            window.location.href = "/detail.html";
+        }, delayInMilliseconds);
+    </script>
 </body>
 </html>

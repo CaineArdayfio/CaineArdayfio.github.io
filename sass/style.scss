@@ -64,78 +64,6 @@ h1 {
     transition: 0.5s;
 }
 // [ END NAVIGATION BAR ]
-
-
-// [ START ANIMATIONS ]
-@keyframes fadeIn {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-}
-@keyframes fadeInUp {
-    0% {
-        opacity: 0;
-        transform: translate3d(0, 100%, 0);
-    }
-    100% {
-        opacity: 1;
-        transform: none;
-    }
-}
-@keyframes fadeInRight {
-    0% {
-      transform: translate3d(-100%, 0, 0);
-    }
-    100% {
-      transform: none;
-    }
-}
-
-@keyframes fadeOutRight {
-    0% {
-      transform: none;
-    }
-    100% {
-      transform: translate3d(100%, 0, 0);
-    }
-}
-
-
-.m-scene {
-    // Basic styles for an animated element
-    .scene_element {
-        animation-delay: 3s;
-        animation-duration: 1s;
-        transition-timing-function: ease-in;
-        animation-fill-mode: both;
-    }
-
-    // An element that fades in
-    .scene_element--fadein {
-        animation-name: fadeIn;
-    }
-
-    // An element that fades in and slides up
-    .scene_element--fadeinup {
-        animation-name: fadeInUp;
-    }
-
-    // An element that fades in and slides from the right
-    .scene_element--fadeinright {
-        animation-name: fadeInRight;
-    }
-
-    .scene_element--fadeoutright {
-        animation-name: fadeOutRight;
-    }
-}
-
-// [ END ANIMATIONS ]
-
-
 /*
 <svg version="1.1" id="a11y-svg" x="0px" y="0px" xml:space="preserve" role="img" aria-label="Accessibility Statement" focusable="false">
                     <g id="a11y-svg-design"><text aria-hidden="true" class="svg-color"><tspan>CAINE</tspan><tspan>ARDAYFIO</tspan></text></g>
@@ -175,3 +103,6 @@ h1 {
     }
 }
 */
+
+
+  
