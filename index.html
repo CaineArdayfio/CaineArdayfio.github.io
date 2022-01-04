@@ -4,9 +4,11 @@
     <link href="css/style.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="scripts/jquery.smoothState.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2542/jquery.scrollie.min_1.js"></script>
     <script src="scripts/scripts.js"></script>
 </head>
-<body id="main">
+<body>
     <div class="sidenav">
         <a href="#">About</a>
         <a href="#">Services</a>
@@ -16,23 +18,52 @@
 
 
     <!-- Home page -->
-    <div class="m-scene" id="page1">
-        <div class="m-header scene_element scene_element--fadeoutright">
+    <div class="m-scene">
+        <div class="scene_element" id="page1">
             &nbsp;
-            <div id="header">
-                <h1>
-                    CAINE
-                    <br/>
-                    ARDAYFIO
-                </h1>
-            </div>
+            <!--
+            <h1>
+                CAINE
+                <br/>
+                ARDAYFIO
+            </h1>
+            -->
+            <svg version="1.1" id="a11y-svg" x="50%" y="0px" xml:space="preserve" role="img" aria-label="Accessibility Statement" focusable="false">
+                <g id="a11y-svg-design">
+                    <text aria-hidden="true" class="svg-color" x="50%" y="50%" dominant-baseline="middle" text-anchor="middle">
+                        <tspan x="0" dy="1em">CAINE</tspan>
+                        <tspan x="0" dy="1em">ARDAYFIO</tspan>
+                    </text>
+                </g>
+            </svg>
         </div>
-    </div>
-    <!-- Detail page -->
-    <div class="m-scene" id="page2">
-        <div class="m-right-panel m-page scene_element scene_element--fadeoutleft">
+        <div class="scene_element" id="page2">
             &nbsp;
-            <h1>CAINE ARDAYFIO</h1>
+            <div id="slide-1" class="slide" data-background="#F16A67">
+                <h1 id="header">
+                    <span class="text-wrapper">
+                      <span class="letters letters-top">Yes, I can code.</span><br/>
+                      <span class="letters letters-middle">But I can do more</span><br/>
+                      <span class="letters letters-bottom">much, much more.</span>
+                    </span>
+                </h1>
+                <div id="video-container">
+                    <video id="video" autoplay muted loop>
+                        <source src="assets/movie.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+            <div id="slide-2" class="slide" data-background="#6CC084">
+                <div class="box" id="box-1">
+                </div>
+                <div class="box" id="box-2">
+                </div>
+                <div class="box" id="box-3">
+                </div>
+            </div>
+            <div id="slide-3" class="slide" data-background="#6CC084">
+                asdf
+            </div>
         </div>
     </div>
 </body>
