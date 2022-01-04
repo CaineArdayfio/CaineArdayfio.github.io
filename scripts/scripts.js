@@ -15,16 +15,39 @@ function enableScroll() {
 }
 
 $(document).ready(function() {
+  $("#stop1").attr("offset", "100%")
+  $('#stop1').animate(
+    { offset: "0"},
+    {
+      duration: 2000,
+      step: function(now, fx) { 
+        $(this).attr("offset", now); 
+        console.log(fx)
+      }
+    }
+  );
+    /*
+  $('#stop2').animate(
+    { offset: "0"},
+    {
+      duration: 2000,
+      step: function(now, fx) { 
+        $(this).attr("offset", now); 
+        console.log(now)
+      }
+    }
+  );
+*/
   setTimeout(function() {
     $('#page1').animate({
         left: "100%",
       }, 1000, function() {
     });
-    
+
     $('body').css({
       backgroundColor: "#33333B",
     });
-    
+
     $('#page2').animate({
         left: "0%",
       }, 1000, function() {

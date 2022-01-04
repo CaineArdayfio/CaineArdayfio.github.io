@@ -22,7 +22,7 @@ html, body {
 
 body {
     transition: background-color ease-in 0.5s;
-    background-color: $base-color;
+    background-color: black;
 }
 
 #page1 {
@@ -30,19 +30,9 @@ body {
     height: 100vh;
     left: 0%;
     position: absolute;
-    /*
-    h1 {
-        text-align: center;
-        font-size: 13em;
-        font-family: 'Libre Caslon Text', 'Merriweather', serif;
-        font-family: $font-2;
-        color: $accent-color;
-        -webkit-text-stroke-width: 1px;
-        -webkit-text-stroke-color: $accent-color;
-    }
-    */
+
     .svg-color {
-        stroke: $accent-color;
+        stroke: white; //$accent-color;
         font-size: 13em;
     }
 
@@ -52,9 +42,9 @@ body {
         margin: auto;
         stroke-linecap: round;
         padding: 0.25rem;
-        stroke-dasharray: 1000;
-        stroke-dashoffset: 0;
-        animation: dash 2s linear forwards, fill 2s linear forwards;
+        //stroke-dasharray: 1000;
+        //stroke-dashoffset: 0;
+        //animation: dash 2s linear forwards, fill 2s linear forwards;
         overflow: visible;
         height: 0;
         //margin: 10rem 0 5rem 2rem;
@@ -63,7 +53,7 @@ body {
 
     #a11y-svg-design {
         cursor: pointer;
-        stroke-width: 2px;
+        //stroke-width: 2px;
     }
 
     @keyframes dash {
@@ -211,11 +201,3 @@ body {
     transition: 0.5s;
 }
 // [ END NAVIGATION BAR ]
-
-
-// [ START ANIMATIONS ]
-.m-scene {
-    width: 100%;
-}
-
-// [ END ANIMATIONS ]

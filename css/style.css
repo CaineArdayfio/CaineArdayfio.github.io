@@ -13,7 +13,7 @@ html, body {
 
 body {
   transition: background-color ease-in 0.5s;
-  background-color: #33333B;
+  background-color: black;
 }
 
 #page1 {
@@ -21,20 +21,9 @@ body {
   height: 100vh;
   left: 0%;
   position: absolute;
-  /*
-  h1 {
-      text-align: center;
-      font-size: 13em;
-      font-family: 'Libre Caslon Text', 'Merriweather', serif;
-      font-family: $font-2;
-      color: $accent-color;
-      -webkit-text-stroke-width: 1px;
-      -webkit-text-stroke-color: $accent-color;
-  }
-  */
 }
 #page1 .svg-color {
-  stroke: #F2ADA0;
+  stroke: white;
   font-size: 13em;
 }
 #page1 #a11y-svg {
@@ -43,16 +32,12 @@ body {
   margin: auto;
   stroke-linecap: round;
   padding: 0.25rem;
-  stroke-dasharray: 1000;
-  stroke-dashoffset: 0;
-  animation: dash 2s linear forwards, fill 2s linear forwards;
   overflow: visible;
   height: 0;
   position: relative;
 }
 #page1 #a11y-svg-design {
   cursor: pointer;
-  stroke-width: 2px;
 }
 @keyframes dash {
   from {
@@ -182,10 +167,6 @@ body {
 .sidenav a:hover {
   color: #F2ADA0;
   transition: 0.5s;
-}
-
-.m-scene {
-  width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */
