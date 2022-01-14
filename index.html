@@ -6,62 +6,68 @@
     <link href="css/layout.css" rel="stylesheet">
     <link href="css/pageTransitions.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="scripts/jquery.smoothState.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2542/jquery.scrollie.min_1.js"></script>
+    <script src="scripts/scripts.js"></script>
 </head>
 <body>
-    <div class="index m-scene" id="main">
-        <div class="m-landing-layout">
-          <div class="m-header scene_element scene_element--fadein">
-            <h1 class="m-type-display-1">Page jank demo</h1>
-            <p class="m-type-sub-heading-1 header_intro">To run this demo locally, start a server in the root of this repository. If you have python installed, you can simply run <code>python -m SimpleHTTPServer</code> after you <code>cd</code> into the repo.</p>
-          </div>
-          <div class="m-page scene_element scene_element--fadeinup">
-            <div class="m-segment">
-              <div class="segment_content">
-                <h2 class="m-type-heading-1"><a href="./detail.html">Detail page demo</a>
-                </h2>
-                <p class="description">Voluptatum doloribus est omnis molestiae sed. Officia sint et repellat dolorum a velit. Ipsam velit explicabo repudiandae qui ratione voluptas repellat exercitationem magni commodi.</span></p>
-              </div>
-            </div>
-            <div class="m-segment">
-              <div class="segment_content">
-                <h2 class="m-type-heading-1"><a href="./detail.html">Detail page demo</a>
-                </h2>
-                <p class="description">Voluptatum doloribus est omnis molestiae sed. Officia sint et repellat dolorum a velit. Ipsam velit explicabo repudiandae qui ratione voluptas repellat exercitationem magni commodi.</span></p>
-              </div>
-            </div>
-            <div class="m-segment">
-              <div class="segment_content">
-                <h2 class="m-type-heading-1"><a href="./detail.html">Detail page demo</a>
-                </h2>
-                <p class="description">Voluptatum doloribus est omnis molestiae sed. Officia sint et repellat dolorum a velit. Ipsam velit explicabo repudiandae qui ratione voluptas repellat exercitationem magni <a href="./detail.html#footer">skip to detail pagefooter</a>.</span></p>
-              </div>
-            </div>
-            <div class="m-highlight m-segment">
-              <div class="segment_content">
-                Developed by <a href="https://twitter.com/tayokoart">Miguel Ángel Pérez</a> and maintained by <a href="https://github.com/miguel-perez/jquery.smoothState.js/graphs/contributors">contributors</a> under the <a href="https://github.com/miguel-perez/jquery.smoothState.js/blob/master/LICENSE.md">MIT License</a>.
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    <!--
-    <div class="m-scene" id="page1">
-        <div class="m-header scene_element scene_element--fadeoutright">
-            &nbsp;
-            <div id="header">
-                <h1>
-                    CAINE
-                    <br/>
-                    ARDAYFIO
-                </h1>
-            </div>
-        </div>
+    <div class="sidenav">
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a>
     </div>
-    <div class="m-scene" id="page2">
-        <div class="m-right-panel m-page scene_element scene_element--fadeoutleft">
+
+
+    <!-- Home page -->
+    <div class="m-scene">
+        <div class="scene_element" id="page1">
             &nbsp;
-            <h1>CAINE ARDAYFIO</h1>
+            <!--
+            <h1>
+                CAINE
+                <br/>
+                ARDAYFIO
+            </h1>
+            -->
+            <svg version="1.1" id="a11y-svg" x="50%" y="0px" xml:space="preserve" role="img" aria-label="Accessibility Statement" focusable="false">
+                <g id="a11y-svg-design">
+                    <text aria-hidden="true" class="svg-color" x="50%" y="50%" dominant-baseline="middle" text-anchor="middle">
+                        <tspan x="0" dy="1em">CAINE</tspan>
+                        <tspan x="0" dy="1em">ARDAYFIO</tspan>
+                    </text>
+                </g>
+            </svg>
+        </div>
+        <div class="scene_element" id="page2">
+            &nbsp;
+            <div id="slide-1" class="slide" data-background="#F16A67">
+                <h1 id="header">
+                    <span class="text-wrapper">
+                      <span class="letters letters-top">Yes, I can code.</span><br/>
+                      <span class="letters letters-middle">But I can do more</span><br/>
+                      <span class="letters letters-bottom">much, much more.</span>
+                    </span>
+                </h1>
+                <div id="video-container">
+                    <video id="video" autoplay muted loop>
+                        <source src="assets/movie.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+            <div id="slide-2" class="slide" data-background="#6CC084">
+                <div class="box" id="box-1">
+                </div>
+                <div class="box" id="box-2">
+                </div>
+                <div class="box" id="box-3">
+                </div>
+            </div>
+            <div id="slide-3" class="slide" data-background="#6CC084">
+                asdf
+            </div>
         </div>
     </div>
     -->
