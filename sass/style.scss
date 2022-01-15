@@ -144,6 +144,7 @@ body {
     div#slide-2 {
         width: 100%;
         height: 60vh;
+        position: relative;
         span {
             display: inline-block;
             vertical-align: middle;
@@ -169,15 +170,44 @@ body {
             width: 35%;
         }
         #box-3 {
-            width: 40%; // should be 40???
+            width: 40%;
         }
     }
-
+    div#sticky-line {
+        //position: -webkit-sticky;
+        //position: sticky;
+        position: fixed;
+        background-color: $accent-color;
+        height: 20px;
+        width: 100%;
+        top: 0;
+        overflow: hidden;
+        //top: -100vh;//20px;
+    }
     div#slide-3 {
         position: relative;
         width: 100%;
-        height: 100vh;
+        height: 80vh;
         border-top: 2px solid $accent-color;
+        background-color: $base-color;
+        display: flex; 
+        justify-content: center;
+        div#proj-header {
+            font-size: 4em;
+            //align-self: center;
+            align-self: flex-start;
+            width: 100%;
+            position: -webkit-sticky;
+            position: sticky;
+            top: 50px;
+            height: 100%;
+        }
+    }
+    div#slide-4 {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        border: 2px solid $accent-color;
         background-color: $base-color;
     }
 }
@@ -200,6 +230,7 @@ body {
     padding: 6px 6px 6px 32px;
     text-decoration: none;
     font-size: 2em;
+    font-family: $font-1;
     color: $accent-color;
     display: block;
     position: relative;
