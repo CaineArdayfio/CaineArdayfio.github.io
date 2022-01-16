@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Libre+Caslon+Text:wght@400;700&family=Merriweather&display=swap');
+@font-face {
+    font-family: ekselldisplay-large;
+    src: url(../assets/ekselldisplay-large-webfont.woff2);
+}
+
+
+  
+$base-color: #F5E388;
+$base-color-dark: #edd86f;
+$accent-color: #F2ADA0;
+$accent-color2: #F16A67;
+$accent-color3: #DFE2D1;
+$accent-color4: #6CC084;
+$quidio-blue: #4287F5;
+$quidio-red: #EF4444;
+$black: #212529;
+$black-dark: #101214;
+$font-1: 'Lato', sans-serif;
+$font-2: ekselldisplay-large;
+
+::selection {
+    /* Change highlight background color to black */
+    background: $base-color;
+    /* Change highlight text color to red */
+    //color: #ff0000;
+  }
+
+html, body {
+    padding: 0px;
+    margin: 0px;
+    height: 100%;
+    font-family: $font-2;
+}
+
+body {
+    background-color: $base-color;
+}
+
+div#page1 {
+    width: 100%;
+    min-height: 100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    h1 {
+        font-size: 10em;
+        text-align: center;
+        span#back {
+            top: 30%;
+            left: 8%;
+            position: fixed;
+            z-index: -3;
+        }
+        span#front {
+            top: 30%;
+            left: 8%;
+            position: fixed;
+            color: rgba(255, 255, 255, 0);
+            -webkit-text-stroke-width: 2px;
+            -webkit-text-stroke-color: $black;
+            z-index: 1;
+        }
+    }
+    img#img_header{
+        width: 43%;
+        z-index: 0;
+    }
+
+}
+
+div#page2 {
+    width: 100%;
+    background-color: white;
+    z-index: 1;
+    position: relative;
+}
+
+div#page3 {
+    width: 100%;
+    min-height: 200vh;
+    //background: -webkit-linear-gradient(45deg, $base-color 70%, $base-color-dark 30%);
+    background: linear-gradient(23deg, $base-color 50%, $base-color-dark 50%);
+    #part-1{
+        min-height: 100vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    #part-2{
+        min-height: 100vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    h1 {
+        font-family: $font-1;
+        font-size: 2em;
+        font-weight: 700;
+    }
+    h3 {
+        font-family: $font-1;
+        font-size: 1em;
+        font-weight: 700;
+    }
+    h3#quidio-subtitle {
+        border-bottom: 2px black solid;
+        padding-bottom: 1em;
+    }
+}
+
+div.content {
+    padding-top: 3em;
+    a {
+        text-decoration: none;
+    }
+
+    .row {
+        padding-top: 5em;
+    }
+    .main {
+        h1.subheading {
+            font-family: $font-1;
+            font-size: 2em;
+            font-weight: 700;
+        }
+        h1.title {
+            font-family: $font-2;
+            font-size: 5em;
+        }
+    }
+    .supplementary {
+        h1.subheading {
+            font-family: $font-1;
+            font-size: 2em;
+            font-weight: 700;
+        }
+        h1.title {
+            font-family: $font-2;
+            font-size: 5em;
+        }
+    }
+
+    p.body {
+        font-family: $font-1;
+        font-weight: 400;
+        font-size: 1.3em;
+    }
+    footer {
+        font-family: $font-1;
+        font-weight: 700;
+        font-weight: 700;
+        font-size: 1.3em;
+        a {
+            text-decoration: none;
+            color: $black;
+        }
+    }
+
+    #definition {
+        text-align: center;
+        h1 {
+            font-size: 3em;
+        }
+        p {
+            font-size: 1.3em;
+            font-family: $font-1;
+        }
+    }
+
+    div.logo {
+        .color {
+            border-radius: 5em;
+            width: 80%;
+            height: 2.5em;
+            margin-top: 0.7em;
+            margin-bottom: 0.7em;
+            text-align: center;
+            color: white;
+            line-height: 2.5em;
+        }
+
+        .color-text {
+            font-family: $font-1;
+            font-size: 2em;
+            line-height: 1em;
+        }
+
+        #box1 {
+            background-color: $base-color;
+        }
+        #box2 {
+            background-color: $quidio-blue;
+        }
+        #box3 {
+            background-color: $quidio-red;
+        }
+        #box4 {
+            background-color: $black;
+        }
+    }
+    #branding-logo {
+        width: 80%;
+    }
+    div.logo img {
+        display: inline;
+        width: 49%;
+        padding: 0 10px 0 10px;
+    }
+    #bottom {
+        background-color: $black-dark;
+        color: white;
+        width: 100%;
+        min-width: 100%;
+        padding-bottom: 8em;
+        margin-top: 8em;
+    }
+
+    .figure-caption {
+        text-align: center;
+        font-size: 1em;
+        font-family: $font-1;
+        color: $black;
+    }
+
+    #adventure {
+        h1.subheading {
+            font-family: $font-1;
+            font-size: 2em;
+            font-weight: 700;
+        }
+        background-color: $base-color;
+        width: 100%;
+        min-width: 100%;
+        margin-top: 8em;
+        .title {
+            font-size: 5em;
+            padding-bottom: 1em;
+        }
+    }
+}
+
+// [ START NAVIGATION BAR ]
+.sidenav {
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+
+.sidenav a {
+    padding: 6px 6px 6px 32px;
+    text-decoration: none;
+    font-size: 2em;
+    font-family: $font-1;
+    color: $accent-color;
+    display: block;
+    position: relative;
+    left: -100%;
+}
+
+.sidenav a:hover {
+    color: $accent-color;
+    transition: 0.5s;
+}
+// [ END NAVIGATION BAR ]
+
+
+// [ START ANIMATIONS ]
+.m-scene {
+    width: 100%;
+}
+
+// [ END ANIMATIONS ]
