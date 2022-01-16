@@ -1,123 +1,132 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/keyframes.css" rel="stylesheet">
-    <link href="css/layout.css" rel="stylesheet">
-    <link href="css/pageTransitions.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="css/index.css" rel="stylesheet">
+</head>
+<body>
+    <div id="background">
+        <nav>
+            <div class="wrapper">
+                <header>
+                <nav>
+                    <div class="menu-icon">
+                        <i class="fa fa-bars fa-2x"></i>
+                    </div>
+                    <div class="logo">
+                        <a href="#" data-page="page-intro">Ardayf.io</a>
+                    </div>
+                    <div class="menu">
+                        <ul>
+                            <li><a href="#" data-page="page-intro">Home</a></li>
+                            <li><a href="#" data-page="page-about">About</a></li>
+                            <li><a href="#" data-page="page-eniac">Projects</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                </header>
+            </div>
+        </nav>
+        <div id="main" class="color-black">
+            <div id="mask"></div>
+            <div id="particle-canvas"></div>
+            <div class="panel" id="page-intro">
+                <div id="main-text">
+                    <h3 id="hello">
+                        Hi 👋, I'm
+                    </h3>
+                    <h1 id="linear-wipe">
+                        Caine
+                        Ardayf.io
+                    </h1>
+                    <h3 id="innovator">
+                        Innovator in tech 🚀
+                    </h3>
+                    <h3 id="description">
+                        Computer Science student at Harvard<br/>
+                        I'm an entrepreneur and technologist.
+                    </h3>
+                </div>
+            </div>
+            <div id="scroll-arrow">
+                <a data-event-type="helper" data-event="scrollToContent">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="53px" height="20px" viewBox="0 0 53 20" enable-background="new 0 0 53 20" xml:space="preserve">
+                        <g>
+                            <polygon stroke="white" fill="white" points="26.5,17.688 9.114,3.779 10.303,2.312 26.5,15.269 42.697,2.313 43.886,3.779 	"></polygon>
+                        </g>
+                    </svg>
+                </a>
+            </div>
+            <div class="panel" id="page-about">
+                <div>
+                    <h3 class="subtitle" id="hello">
+                        Hi 👋, asI'm
+                    </h3>
+                    <h1 class="linear-wipe">
+                        Caine <br/>
+                        Ardayf.io
+                    </h1>
+                    <h3 class="subtitle" id="innovator">
+                        Innovator in tech 🚀
+                    </h3>
+                    <h3 id="description">
+                        I'm a student studying Computer Science at Harvard. I'm an entrepreneur and technologist.
+                    </h3>
+                </div>
+            </div>
+            <div class="panel" id="page-eniac">
+                <div>
+                    <div class="fade-text eniac-text">
+                        <h3 class="subtitle">
+                            Founder & CEO
+                        </h3>
+                        <div class="line"></div>
+                        <h1>
+                            Meet Eniac
+                        </h1>
+                    </div>
+                    <div class="fade-text eniac-text">
+                        <h3>
+                            The New Age of Journaling.
+                        </h3>
+                        <h3>
+                            <a href="/quidio.html">Learn more</a>
+                        </h3>
+                    </div>
+                </div>
+            </div>
+            <div class="panel" id="page-quidio">
+                <div>
+                    <div class="fade-text quidio-text">
+                        <h3 class="subtitle">
+                            Founder & COO
+                        </h3>
+                        <div class="line"></div>
+                        <h1>
+                            Meet Quidio
+                        </h1>
+                    </div>
+                    <div class="fade-text quidio-text">
+                        <h3>
+                            I co-founded the first knowledge marketplace.
+                        </h3>
+                        <h3>
+                            <a href="/quidio.html">Learn more</a>
+                        </h3>
+                        <img src="assets/quidio.png"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="scripts/jquery.smoothState.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
     <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2542/jquery.scrollie.min_1.js"></script>
+    <script src="scripts/particle-network.min.js"></script>
+    <script src="https://bundle.run/css-scroll-snap-polyfill@0.1.2"></script>
     <script src="scripts/scripts.js"></script>
-</head>
-<body>
-    <div class="sidenav">
-        <a href="#">About</a>
-        <a href="#">Services</a>
-        <a href="#">Clients</a>
-        <a href="#">Contact</a>
-    </div>
-
-
-    <!-- Home page -->
-    <div class="m-scene">
-        <div class="scene_element" id="page1">
-            &nbsp;
-            <!--
-            <h1>
-                CAINE
-                <br/>
-                ARDAYFIO
-            </h1>
-            -->
-            <svg version="1.1" id="a11y-svg" x="50%" y="0px" xml:space="preserve" role="img" aria-label="Accessibility Statement" focusable="false">
-                <g id="a11y-svg-design">
-                    <text aria-hidden="true" class="svg-color" x="50%" y="50%" dominant-baseline="middle" text-anchor="middle">
-                        <tspan x="0" dy="1em">CAINE</tspan>
-                        <tspan x="0" dy="1em">ARDAYFIO</tspan>
-                    </text>
-                </g>
-            </svg>
-        </div>
-        <div class="scene_element" id="page2">
-            &nbsp;
-            <div id="slide-1" class="slide" data-background="#F16A67">
-                <h1 id="header">
-                    <span class="text-wrapper">
-                      <span class="letters letters-top">Yes, I can code.</span><br/>
-                      <span class="letters letters-middle">But I can do more</span><br/>
-                      <span class="letters letters-bottom">much, much more.</span>
-                    </span>
-                </h1>
-                <div id="video-container">
-                    <video id="video" autoplay muted loop>
-                        <source src="assets/movie.mp4" type="video/mp4">
-                    </video>
-                </div>
-            </div>
-            <div id="slide-2" class="slide" data-background="#6CC084">
-                <div class="box" id="box-1">
-                </div>
-                <div class="box" id="box-2">
-                </div>
-                <div class="box" id="box-3">
-                </div>
-            </div>
-            <!--<div id="sticky-line"></div>-->
-            <div id="slide-3" class="slide" data-background="#6CC084">
-                <div id="proj-header">
-                    <h1>My Projects</h1>
-                </div>
-            </div>
-            <div id="slide-4" class="slide" data-background="#6CC084">
-                cainme ardayfio
-            </div>
-        </div>
-    </div>
-    -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="scripts/jquery.smoothState.js"></script>
-    <script src="scripts/scripts.js"></script>
-</body>
-</html>
-
-
-
-<!--
-    <!DOCTYPE html>
-<html>
-<head>
-    <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/keyframes.css" rel="stylesheet">
-    <link href="css/layout.css" rel="stylesheet">
-    <link href="css/pageTransitions.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-</head>
-<body>
-    <div class="index m-scene" id="main">
-        <div class="scene_element scene_element--fadein" id="page1">
-            &nbsp;
-            <div id="header">
-                <h1>
-                    CAINE
-                    <br/>
-                    ARDAYFIO
-                </h1>
-            </div>
-        </div>
-    </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="scripts/jquery.smoothState.js"></script>
-    <script src="scripts/scripts.js"></script>
-    <script>
-        var delayInMilliseconds = 4000; //1 second
-
-        setTimeout(function() {
-            window.location.href = "/detail.html";
-        }, delayInMilliseconds);
-    </script>
 </body>
 </html>
 -->

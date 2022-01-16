@@ -1,0 +1,243 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Libre+Caslon+Text:wght@400;700&family=Merriweather&display=swap");
+@font-face {
+  font-family: ekselldisplay-large;
+  src: url(../assets/ekselldisplay-large-webfont.woff2);
+}
+::selection {
+  /* Change highlight background color to black */
+  background: #F5E388;
+  /* Change highlight text color to red */
+}
+
+html, body {
+  padding: 0px;
+  margin: 0px;
+  height: 100%;
+  font-family: ekselldisplay-large;
+}
+
+body {
+  background-color: #F5E388;
+}
+
+div#page1 {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+div#page1 h1 {
+  font-size: 10em;
+  text-align: center;
+}
+div#page1 h1 span#back {
+  top: 30%;
+  left: 8%;
+  position: fixed;
+  z-index: -3;
+}
+div#page1 h1 span#front {
+  top: 30%;
+  left: 8%;
+  position: fixed;
+  color: rgba(255, 255, 255, 0);
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #212529;
+  z-index: 1;
+}
+div#page1 img#img_header {
+  width: 43%;
+  z-index: 0;
+}
+
+div#page2 {
+  width: 100%;
+  background-color: white;
+  z-index: 1;
+  position: relative;
+}
+
+div#page3 {
+  width: 100%;
+  min-height: 200vh;
+  background: linear-gradient(23deg, #F5E388 50%, #edd86f 50%);
+}
+div#page3 #part-1 {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+div#page3 #part-2 {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+div#page3 h1 {
+  font-family: "Lato", sans-serif;
+  font-size: 2em;
+  font-weight: 700;
+}
+div#page3 h3 {
+  font-family: "Lato", sans-serif;
+  font-size: 1em;
+  font-weight: 700;
+}
+div#page3 h3#quidio-subtitle {
+  border-bottom: 2px black solid;
+  padding-bottom: 1em;
+}
+
+div.content {
+  padding-top: 3em;
+}
+div.content a {
+  text-decoration: none;
+}
+div.content .row {
+  padding-top: 5em;
+}
+div.content .main h1.subheading {
+  font-family: "Lato", sans-serif;
+  font-size: 2em;
+  font-weight: 700;
+}
+div.content .main h1.title {
+  font-family: ekselldisplay-large;
+  font-size: 5em;
+}
+div.content .supplementary h1.subheading {
+  font-family: "Lato", sans-serif;
+  font-size: 2em;
+  font-weight: 700;
+}
+div.content .supplementary h1.title {
+  font-family: ekselldisplay-large;
+  font-size: 5em;
+}
+div.content p.body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 1.3em;
+}
+div.content footer {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-weight: 700;
+  font-size: 1.3em;
+}
+div.content footer a {
+  text-decoration: none;
+  color: #212529;
+}
+div.content #definition {
+  text-align: center;
+}
+div.content #definition h1 {
+  font-size: 3em;
+}
+div.content #definition p {
+  font-size: 1.3em;
+  font-family: "Lato", sans-serif;
+}
+div.content div.logo .color {
+  border-radius: 5em;
+  width: 80%;
+  height: 2.5em;
+  margin-top: 0.7em;
+  margin-bottom: 0.7em;
+  text-align: center;
+  color: white;
+  line-height: 2.5em;
+}
+div.content div.logo .color-text {
+  font-family: "Lato", sans-serif;
+  font-size: 2em;
+  line-height: 1em;
+}
+div.content div.logo #box1 {
+  background-color: #F5E388;
+}
+div.content div.logo #box2 {
+  background-color: #4287F5;
+}
+div.content div.logo #box3 {
+  background-color: #EF4444;
+}
+div.content div.logo #box4 {
+  background-color: #212529;
+}
+div.content #branding-logo {
+  width: 80%;
+}
+div.content div.logo img {
+  display: inline;
+  width: 49%;
+  padding: 0 10px 0 10px;
+}
+div.content #bottom {
+  background-color: #101214;
+  color: white;
+  width: 100%;
+  min-width: 100%;
+  padding-bottom: 8em;
+  margin-top: 8em;
+}
+div.content .figure-caption {
+  text-align: center;
+  font-size: 1em;
+  font-family: "Lato", sans-serif;
+  color: #212529;
+}
+div.content #adventure {
+  background-color: #F5E388;
+  width: 100%;
+  min-width: 100%;
+  margin-top: 8em;
+}
+div.content #adventure h1.subheading {
+  font-family: "Lato", sans-serif;
+  font-size: 2em;
+  font-weight: 700;
+}
+div.content #adventure .title {
+  font-size: 5em;
+  padding-bottom: 1em;
+}
+
+.sidenav {
+  height: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 6px 6px 6px 32px;
+  text-decoration: none;
+  font-size: 2em;
+  font-family: "Lato", sans-serif;
+  color: #F2ADA0;
+  display: block;
+  position: relative;
+  left: -100%;
+}
+
+.sidenav a:hover {
+  color: #F2ADA0;
+  transition: 0.5s;
+}
+
+.m-scene {
+  width: 100%;
+}
+
+/*# sourceMappingURL=content.css.map */
