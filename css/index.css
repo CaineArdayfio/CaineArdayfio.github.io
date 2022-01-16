@@ -122,6 +122,8 @@ nav a:hover {
 
 div#main {
   width: 100%;
+  background-color: none;
+  transition: background-color 0.4s ease;
   font-family: "Lato", sans-serif;
 }
 div#main .panel {
