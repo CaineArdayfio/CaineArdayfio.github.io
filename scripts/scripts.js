@@ -1,8 +1,16 @@
+const tilt = $('.js-tilt').tilt({
+  maxTilt: 10,
+});
+
 // Smooth scroll
 $("nav ul li a").click(function() {
+  $('html, body').css({'scroll-snap-type': 'none'})
   $('html, body').animate({
       scrollTop: $("#" + $(this).data('page')).offset().top},
-      'slow');
+      'slow',
+      function(){
+        $('html, body').css({'scroll-snap-type': 'y mandatory'})
+      });
 });
 
 // Navbar scroll
@@ -25,6 +33,54 @@ window.onscroll = () => {
   });
 };
 
+// Icon hover
+$( "div.icons .square" ).hover(function () {
+  if($(this).attr('id') === 'hpair'){
+    $(this).children('img').animate({
+      top: '15%',
+    })
+    $(this).children('.banner').animate({
+      top: '27%',
+    })
+  } else if($(this).attr('id') === 'lilly'){
+    $(this).children('img').animate({
+      top: '15%',
+    })
+    $(this).children('.banner').animate({
+      top: '28%',
+    })
+  } else if($(this).attr('id') === 'liberty'){
+    $(this).children('img').animate({
+      top: '15%',
+    })
+    $(this).children('.banner').animate({
+      top: '28%',
+    })
+  }
+}, function() {
+  if($(this).attr('id') === 'hpair'){
+    $(this).children('img').animate({
+      top: '35%',
+    })
+    $(this).children('.banner').animate({
+      top: '100%',
+    })
+  } else if($(this).attr('id') === 'lilly'){
+    $(this).children('img').animate({
+      top: '35%',
+    })
+    $(this).children('.banner').animate({
+      top: '100%',
+    })
+  } else if($(this).attr('id') === 'liberty'){
+    $(this).children('img').animate({
+      top: '35%',
+    })
+    $(this).children('.banner').animate({
+      top: '100%',
+    })
+  }
+});
 
 // PARTICLES
 var canvasDiv = document.getElementById('particle-canvas');
@@ -48,14 +104,9 @@ $(window).scroll(function() {
   $panel.each(function () {
     var $this = $(this);
 
-    // if position is within range of this panel.
+    // If position is within range of this panel.
     // So position of (position of top of div <= scroll position) && (position of bottom of div > scroll position).
     // Remember we set the scroll to 33% earlier in scroll var.
-    /*
-    $('div#main').css({
-          background: "red" //"linear-gradient(23deg, #4287F5 50%, #3875d8 50%)"
-        })
-    */
     if ($this.position().top <= scroll && $this.position().top + $this.height() > scroll) {
       // Remove all classes on body with color-
       //$this.find('.fade-text').css({'display':'block', 'opacity':'0', 'top':'50px', 'position': 'relative'});
@@ -66,7 +117,10 @@ $(window).scroll(function() {
         top: '0px'
       }, { duration: 500, queue: false });
 
-      if($this.attr('id') === 'page-intro' || $this.attr('id') === 'page-about'){
+      if($this.attr('id') === 'page-intro'){
+        $('div#main').removeClass()
+        $('div#main').addClass('color-black')
+      } else if($this.attr('id') === 'page-about'){
         $('div#main').removeClass()
         $('div#main').addClass('color-black')
       } else if($this.attr('id') === 'page-eniac'){

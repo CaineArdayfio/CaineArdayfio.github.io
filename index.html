@@ -3,130 +3,194 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="css/navigation.css" rel="stylesheet">
     <link href="css/index.css" rel="stylesheet">
+    <title>Caine Ardayfio</title>
 </head>
 <body>
-    <div id="background">
-        <nav>
-            <div class="wrapper">
-                <header>
-                <nav>
-                    <div class="menu-icon">
-                        <i class="fa fa-bars fa-2x"></i>
-                    </div>
-                    <div class="logo">
-                        <a href="#" data-page="page-intro">Ardayf.io</a>
-                    </div>
-                    <div class="menu">
-                        <ul>
-                            <li><a href="#" data-page="page-intro">Home</a></li>
-                            <li><a href="#" data-page="page-about">About</a></li>
-                            <li><a href="#" data-page="page-eniac">Projects</a></li>
-                        </ul>
-                    </div>
-                </nav>
-                </header>
-            </div>
-        </nav>
-        <div id="main" class="color-black">
-            <div id="mask"></div>
-            <div id="particle-canvas"></div>
-            <div class="panel" id="page-intro">
-                <div id="main-text">
-                    <h3 id="hello">
-                        Hi 👋, I'm
-                    </h3>
-                    <h1 id="linear-wipe">
-                        Caine
-                        Ardayf.io
-                    </h1>
-                    <h3 id="innovator">
-                        Innovator in tech 🚀
-                    </h3>
-                    <h3 id="description">
-                        Computer Science student at Harvard<br/>
-                        I'm an entrepreneur and technologist.
-                    </h3>
+    <nav>
+        <div class="wrapper">
+            <header>
+            <nav>
+                <div class="menu-icon">
+                    <i class="fa fa-bars fa-2x"></i>
                 </div>
-            </div>
-            <div id="scroll-arrow">
-                <a data-event-type="helper" data-event="scrollToContent">
-                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="53px" height="20px" viewBox="0 0 53 20" enable-background="new 0 0 53 20" xml:space="preserve">
-                        <g>
-                            <polygon stroke="white" fill="white" points="26.5,17.688 9.114,3.779 10.303,2.312 26.5,15.269 42.697,2.313 43.886,3.779 	"></polygon>
-                        </g>
-                    </svg>
-                </a>
-            </div>
-            <div class="panel" id="page-about">
-                <div>
-                    <h3 class="subtitle" id="hello">
-                        Hi 👋, asI'm
-                    </h3>
-                    <h1 class="linear-wipe">
-                        Caine <br/>
-                        Ardayf.io
-                    </h1>
-                    <h3 class="subtitle" id="innovator">
-                        Innovator in tech 🚀
-                    </h3>
-                    <h3 id="description">
-                        I'm a student studying Computer Science at Harvard. I'm an entrepreneur and technologist.
-                    </h3>
+                <div class="logo">
+                    <a href="#" data-page="page-intro">Ardayf.io</a>
                 </div>
+                <div class="menu">
+                    <ul>
+                        <li><a href="#" data-page="page-intro">Home</a></li>
+                        <li><a href="#" data-page="page-about">About</a></li>
+                    </ul>
+                </div>
+            </nav>
+            </header>
+        </div>
+    </nav>
+    <div id="main" class="color-black">
+        <div id="mask"></div>
+        <div id="particle-canvas"></div>
+        <div class="panel" id="page-intro">
+            <div id="main-text">
+                <h3 id="hello">
+                    Hi 👋, I'm
+                </h3>
+                <h1 id="linear-wipe">
+                    Caine
+                    Ardayf.io
+                </h1>
+                <h3 id="innovator">
+                    Innovator in tech 🚀
+                </h3>
+                <h3 id="description">
+                    Computer Science student at Harvard<br/>
+                    I'm an entrepreneur and technologist.
+                </h3>
             </div>
-            <div class="panel" id="page-eniac">
-                <div>
-                    <div class="fade-text eniac-text">
-                        <h3 class="subtitle">
-                            Founder & CEO
-                        </h3>
-                        <div class="line"></div>
-                        <h1>
-                            Meet Eniac
-                        </h1>
+        </div>
+        <div id="scroll-arrow">
+            <a data-event-type="helper" data-event="scrollToContent">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="53px" height="20px" viewBox="0 0 53 20" enable-background="new 0 0 53 20" xml:space="preserve">
+                    <g>
+                        <polygon stroke="white" fill="white" points="26.5,17.688 9.114,3.779 10.303,2.312 26.5,15.269 42.697,2.313 43.886,3.779 	"></polygon>
+                    </g>
+                </svg>
+            </a>
+        </div>
+        <div class="panel" id="page-about">
+            <div>
+                <h3 class="title">
+                    Projects
+                </h3>
+                <div class="icons">
+                    <div class="circle js-tilt" id="quidio" onclick="window.location.href = 'quidio.html';">
+                        <img src="/assets/quidio.png" alt="">
                     </div>
-                    <div class="fade-text eniac-text">
-                        <h3>
-                            The New Age of Journaling.
-                        </h3>
-                        <h3>
-                            <a href="/quidio.html">Learn more</a>
-                        </h3>
+                    <div class="circle js-tilt" id="eniac" onclick="window.open('https://eniac.chat', '_blank');">
+                        <img src="/assets/penguin.png" alt="">
                     </div>
                 </div>
-            </div>
-            <div class="panel" id="page-quidio">
-                <div>
-                    <div class="fade-text quidio-text">
-                        <h3 class="subtitle">
-                            Founder & COO
-                        </h3>
-                        <div class="line"></div>
-                        <h1>
-                            Meet Quidio
-                        </h1>
+                <h3 class="title">
+                    Experience
+                </h3>
+                <div class="icons">
+                    <div class="square" id="hpair">
+                        <img src="/assets/hpair.png" alt="" onclick="window.open('https://www.hpair.org', '_blank');">
+                        <div class="break"></div>
+                        <div class="banner">
+                            HPAIR Technology Associate
+                        </div>
                     </div>
-                    <div class="fade-text quidio-text">
-                        <h3>
-                            I co-founded the first knowledge marketplace.
-                        </h3>
-                        <h3>
-                            <a href="/quidio.html">Learn more</a>
-                        </h3>
-                        <img src="assets/quidio.png"/>
+                    <div class="square" id="lilly">
+                        <img src="/assets/lilly.png" alt="" onclick="window.open('https://www.lilly.com', '_blank');">
+                        <div class="break"></div>
+                        <div class="banner">
+                            Eli Lilly Data Analytics Intern
+                        </div>
+                    </div>
+                    <div class="square" id="liberty">
+                        <img src="/assets/liberty.png" alt="" onclick="window.open('https://www.libertymutualgroup.com', '_blank');">
+                        <div class="break"></div>
+                        <div class="banner">
+                            Liberty Mutual Incoming Tech Intern
+                        </div>
+                    </div>
+                </div>
+                <h3 class="title">
+                    Recent Writings
+                </h3>
+                <div class="icons" style="padding-bottom: 4em">
+                    <div class="triangle" id="learn-code" onclick="window.open('https://medium.datadriveninvestor.com/a-conversation-with-code-org-founder-ceo-hadi-partovi-14a345b0ca0f', '_blank');">
+                        <div class="banner">
+                            <div class="text">
+                                <h3>Interview</h3>
+                                <h1>Hadi Partovi Interview</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="triangle" id="dont-code" onclick="window.open('https://medium.com/geekculture/dont-just-learn-to-code-learn-to-build-cool-stuff-instead-7d0783d51655', '_blank');">
+                        <div class="banner">
+                            <div class="text">
+                                <h3>Article</h3>
+                                <h1>Don't just learn to code</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="triangle" id="sanskrit" onclick="window.open('https://medium.com/indian-thoughts/i-am-become-death-a-treatment-of-ancient-sanskrit-literature-c18ec899455e', '_blank');">
+                        <div class="banner">
+                            <div class="text">
+                                <h3>Essay</h3>
+                                <h1>I Am Become Death</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="triangle" id="friends" onclick="window.open('https://towardsdatascience.com/your-friends-probably-have-more-friends-than-you-b44ffcb5280', '_blank');">
+                        <div class="banner">
+                            <div class="text">
+                                <h3>Article</h3>
+                                <h1>The friendship paradox</h1>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+        <!--
+        <div class="panel" id="page-eniac">
+            <div>
+                <div class="fade-text eniac-text">
+                    <h3 class="subtitle">
+                        Founder & CEO
+                    </h3>
+                    <div class="line"></div>
+                    <h1>
+                        Meet Eniac
+                    </h1>
+                </div>
+                <div class="fade-text eniac-text">
+                    <h3>
+                        The New Age of Journaling.
+                    </h3>
+                    <h3>
+                        <a href="/quidio.html">Learn more</a>
+                    </h3>
+                </div>
+            </div>
+        </div>
+        <div class="panel" id="page-quidio">
+            <div>
+                <div class="fade-text quidio-text">
+                    <h3 class="subtitle">
+                        Founder & COO
+                    </h3>
+                    <div class="line"></div>
+                    <h1>
+                        Meet Quidio
+                    </h1>
+                </div>
+                <div class="fade-text quidio-text">
+                    <h3>
+                        I co-founded the first knowledge marketplace.
+                    </h3>
+                    <h3>
+                        <a href="/quidio.html">Learn more</a>
+                    </h3>
+                    <img src="assets/quidio.png"/>
+                </div>
+            </div>
+        </div>
+        -->
     </div>
+    <!-- Load jquery first! -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- And then the rest... -->
     <script src="scripts/jquery.smoothState.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
     <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2542/jquery.scrollie.min_1.js"></script>
     <script src="scripts/particle-network.min.js"></script>
     <script src="https://bundle.run/css-scroll-snap-polyfill@0.1.2"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
     <script src="scripts/scripts.js"></script>
 </body>
 </html>
--->

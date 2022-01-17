@@ -21,61 +21,6 @@ html, body {
   background-color: black;
 }
 
-.logo {
-  line-height: 60px;
-  position: fixed;
-  float: left;
-  margin: 16px 46px;
-  color: #fff;
-  font-weight: bold;
-  letter-spacing: 2px;
-}
-
-nav {
-  position: fixed;
-  width: 100%;
-  line-height: 60px;
-  font-size: 1.1em;
-  font-weight: 700;
-  z-index: 10;
-}
-
-nav ul {
-  line-height: 60px;
-  list-style: none;
-  overflow: hidden;
-  color: #fff;
-  padding: 0;
-  text-align: right;
-  margin: 0;
-  padding-right: 40px;
-  transition: 1s;
-}
-
-nav ul li {
-  display: inline-block;
-  padding: 16px 40px;
-}
-
-nav a {
-  cursor: pointer;
-  text-decoration: none;
-  color: #a3a3a3;
-}
-
-nav a.active {
-  cursor: pointer;
-  text-decoration: none;
-  color: #EEEEEE;
-}
-
-nav a:hover {
-  cursor: pointer;
-  text-decoration: none;
-  color: #EEEEEE;
-  transition: color 0.7s ease;
-}
-
 #mask {
   width: 100%;
   height: 100vh;
@@ -115,6 +60,151 @@ nav a:hover {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icons .break {
+  flex-basis: 100%;
+  height: 0;
+}
+.icons .circle {
+  height: 20em;
+  width: 20em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 2em;
+  margin-right: 2em;
+  cursor: pointer;
+}
+.icons .square {
+  height: 12em;
+  width: 19em;
+  background-color: #212529;
+  transition: background-color 1s ease;
+  border-radius: 1em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-left: 1em;
+  margin-right: 1em;
+  overflow: hidden;
+  cursor: pointer;
+}
+.icons .square .banner {
+  height: 6em;
+  width: 19em;
+  background-color: rgba(71, 71, 71, 0.3);
+  position: relative;
+  top: 100%;
+  padding: 0.3em;
+}
+.icons .triangle {
+  height: 19em;
+  width: 19em;
+  background-color: #212529;
+  transition: background-color 1s ease;
+  border-radius: 1em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-left: 1em;
+  margin-right: 1em;
+  overflow: hidden;
+  cursor: pointer;
+}
+.icons .triangle .banner {
+  height: 6em;
+  width: 19em;
+  position: relative;
+  top: 7em;
+  padding: 0.3em;
+}
+.icons .triangle .banner .text {
+  padding: 1em;
+}
+.icons .triangle h1 {
+  font-size: 1.3em;
+  text-align: left;
+  font-weight: 700;
+}
+.icons .triangle h3 {
+  font-size: 0.8em;
+  text-align: left;
+  font-weight: 700;
+  margin: 0 0 2px 0;
+  text-transform: uppercase;
+}
+.icons .circle#eniac {
+  background: linear-gradient(27.5deg, #23C4F8, #275EFE);
+}
+.icons .circle#quidio {
+  background: linear-gradient(45deg, #F5AF41, #F39C12, #F1C40F, #F5E388);
+}
+.icons .circle img {
+  width: 70%;
+}
+.icons .square#hpair img {
+  position: relative;
+  top: 35%;
+  width: 80%;
+}
+.icons .square#lilly img {
+  position: relative;
+  top: 35%;
+  height: 40%;
+}
+.icons .square#liberty img {
+  position: relative;
+  top: 35%;
+  width: 80%;
+}
+.icons .square#hpair:hover {
+  background-color: black;
+}
+.icons .square#lilly:hover {
+  background-color: #dc3729;
+}
+.icons .square#liberty:hover {
+  background-color: #191442;
+}
+.icons .triangle#learn-code {
+  background-image: url(../assets/hadi.jpeg);
+  background-size: 19em;
+  background-position: center center;
+}
+.icons .triangle#learn-code .banner {
+  background-color: #495b64;
+}
+.icons .triangle#dont-code {
+  background-image: url(../assets/bird.jpg);
+  background-size: 19em;
+  background-position: center center;
+}
+.icons .triangle#dont-code .banner {
+  background-color: #b6ac6e;
+}
+.icons .triangle#sanskrit {
+  background-image: url(../assets/sanskrit.jpeg);
+  background-size: 19em;
+  background-position: center center;
+}
+.icons .triangle#sanskrit .banner {
+  background-color: #2e1514;
+}
+.icons .triangle#friends {
+  background-image: url(../assets/friends.jpg);
+  background-size: 19em;
+  background-position: center center;
+}
+.icons .triangle#friends .banner {
+  background-color: #212529;
 }
 
 .color-black {
@@ -193,6 +283,11 @@ div#main #page-about {
   display: flex;
   align-items: center;
   justify-content: center;
+  background: linear-gradient(to top, #101214, black);
+}
+div#main #page-about .title {
+  font-size: 2em;
+  margin: 1em;
 }
 div#main #page-eniac {
   min-height: 100vh;

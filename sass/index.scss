@@ -10,6 +10,7 @@ $blue-light: hsl(204 100% 59%);
 $blue: #4287F5;
 $blue-dark: #3875d8;
 $red: #EF4444;
+$black-light: #4b4949;
 $black: #212529;
 $black-dark: #101214;
 $white: #EEEEEE;
@@ -34,70 +35,12 @@ html, body {
     background-color: black;
 }
 
-// [START navbar]
-.logo {
-    line-height: 60px;
-    position: fixed;
-    float: left;
-    margin: 16px 46px;
-    color: #fff;
-    font-weight: bold;
-    letter-spacing: 2px;
-}
-
-nav {
-    position: fixed;
-    width: 100%;
-    line-height: 60px;
-    font-size: 1.1em;
-    font-weight: 700;
-    z-index: 10;
-}
-
-nav ul {
-    line-height: 60px;
-    list-style: none;
-    overflow: hidden;
-    color: #fff;
-    padding: 0;
-    text-align: right;
-    margin: 0;
-    padding-right: 40px;
-    transition: 1s;
-}
-
-nav ul li {
-    display: inline-block;
-    padding: 16px 40px;;
-}
-
-nav a {
-    cursor: pointer;
-    text-decoration: none;
-    color: $white-dark;
-}
-
-nav a.active {
-    cursor: pointer;
-    text-decoration: none;
-    color: $white;
-}
-
-nav a:hover {
-    cursor: pointer;
-    text-decoration: none;
-    color: $white;
-    transition: color 0.7s ease;
-}
-// [END navbar]
-
 // [START misc]
 #mask {
     width: 100%;
     height: 100vh;
     position: absolute;
     top: 0;
-    //background-image: radial-gradient(black 80%, rgba(0, 0, 0, 0));
     background-image: radial-gradient(ellipse at right, rgba(0, 0, 0, 0), black 60%);
     pointer-events: none;
     z-index: 2;
@@ -133,6 +76,160 @@ nav a:hover {
     margin-left: auto;
     margin-right: auto;
 }
+
+.icons {
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    .break {
+        flex-basis: 100%;
+        height: 0;
+    }
+
+    .circle {
+        height: 20em;
+        width: 20em;
+        display: flex;
+        justify-content:center;
+        align-items:center;
+        margin-left: 2em;
+        margin-right: 2em;
+        cursor: pointer;
+    }
+
+    .square {
+        height: 12em;
+        width: 19em;
+        background-color: $black;
+        transition: background-color 1s ease;
+        border-radius: 1em;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:center;
+        align-items:center;
+        margin-left: 1em;
+        margin-right: 1em;
+        overflow: hidden;
+        cursor: pointer;
+        .banner {
+            height: 6em;
+            width: 19em;
+            background-color: rgba(71, 71, 71, 0.3);
+            position: relative;
+            top: 100%;
+            padding: 0.3em;
+        }
+    }
+
+    .triangle {
+        height: 19em;
+        width: 19em;
+        background-color: $black;
+        transition: background-color 1s ease;
+        border-radius: 1em;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:center;
+        align-items:center;
+        margin-left: 1em;
+        margin-right: 1em;
+        overflow: hidden;
+        cursor: pointer;
+        .banner {
+            height: 6em;
+            width: 19em;
+            position: relative;
+            top: 7em;
+            padding: 0.3em;
+            .text {
+                padding: 1em;
+            }
+        }
+        h1 {
+            font-size: 1.3em;
+            text-align: left;
+            font-weight: 700;
+        }
+        h3 {
+            font-size: 0.8em;
+            text-align: left;
+            font-weight: 700;
+            margin: 0 0 2px 0;
+            text-transform: uppercase;
+        }
+    }
+
+    .circle#eniac {
+        background: linear-gradient(27.5deg, #23C4F8, #275EFE)
+    }
+
+    .circle#quidio {
+        background: linear-gradient(45deg, #F5AF41, #F39C12, #F1C40F, $yellow);
+    }
+
+    .circle img {
+        width: 70%;
+    }
+
+    .square#hpair img{
+        position: relative;
+        top: 35%;
+        width: 80%;
+    }
+    .square#lilly img {
+        position: relative;
+        top: 35%;
+        height: 40%;
+    }
+    .square#liberty img {
+        position: relative;
+        top: 35%;
+        width: 80%;
+    }
+    .square#hpair:hover {
+        background-color: black;
+    }
+    .square#lilly:hover {
+        background-color: rgb(220, 55, 41);//$red;
+    }
+    .square#liberty:hover {
+        background-color: rgb(25, 20, 66);
+    }
+
+    .triangle#learn-code {
+        background-image: url(../assets/hadi.jpeg);
+        background-size: 19em;
+        background-position: center center; 
+        .banner {
+            background-color: rgb(73, 91, 100);
+        }
+    }
+    .triangle#dont-code {
+        background-image: url(../assets/bird.jpg);
+        background-size: 19em;
+        background-position: center center; 
+        .banner {
+            background-color: rgb(182, 172, 110);
+        }
+    }
+    .triangle#sanskrit {
+        background-image: url(../assets/sanskrit.jpeg);
+        background-size: 19em;
+        background-position: center center; 
+        .banner {
+            background-color: rgb(46, 21, 20);
+        }
+    }
+    .triangle#friends {
+        background-image: url(../assets/friends.jpg);
+        background-size: 19em;
+        background-position: center center; 
+        .banner {
+            background-color: $black;
+        }
+    }
+}
+
 // [END misc]
 
 .color-black {
@@ -215,6 +312,11 @@ div#main {
         display: flex;
         align-items: center;
         justify-content: center;
+        background: linear-gradient(to top, #101214, black);// TODO: REMOVE
+        .title {
+            font-size: 2em;
+            margin: 1em;
+        }
     }
 
     #page-eniac{
@@ -241,6 +343,7 @@ div#main {
             padding-bottom: 0em;
         }
     }
+
     #page-quidio{
         min-height: 100vh;
         width: 100%;

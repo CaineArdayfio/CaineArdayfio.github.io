@@ -173,6 +173,9 @@ div.content {
     }
 
     div.logo {
+        position: relative;
+        max-width: 45%;
+        flex-wrap: nowrap;
         .color {
             border-radius: 5em;
             width: 80%;
