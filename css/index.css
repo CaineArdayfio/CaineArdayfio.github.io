@@ -60,13 +60,19 @@ nav ul li {
 nav a {
   cursor: pointer;
   text-decoration: none;
-  color: #fff;
+  color: #a3a3a3;
+}
+
+nav a.active {
+  cursor: pointer;
+  text-decoration: none;
+  color: #EEEEEE;
 }
 
 nav a:hover {
   cursor: pointer;
   text-decoration: none;
-  color: #F5E388;
+  color: #EEEEEE;
   transition: color 0.7s ease;
 }
 
@@ -94,7 +100,10 @@ nav a:hover {
 }
 
 .fade-text {
-  display: none;
+  display: block;
+  position: relative;
+  opacity: 0;
+  top: 50px;
 }
 
 .line {

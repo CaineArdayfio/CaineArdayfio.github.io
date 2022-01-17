@@ -1,10 +1,29 @@
 // Smooth scroll
 $("nav ul li a").click(function() {
-  $('html,body').animate({
+  $('html, body').animate({
       scrollTop: $("#" + $(this).data('page')).offset().top},
       'slow');
 });
 
+// Navbar scroll
+const sections = document.querySelectorAll(".panel");
+const navLi = document.querySelectorAll("nav ul li a");
+window.onscroll = () => {
+  var current = "";
+
+  sections.forEach((section) => {
+    const sectionTop = section.offsetTop;
+    if (pageYOffset >= sectionTop ) {
+      current = section.getAttribute("id"); }
+  });
+
+  navLi.forEach((li) => {
+    li.classList.remove("active");
+    if ($(li).data('page') === current) {
+      li.classList.add("active");
+    }
+  });
+};
 
 
 // PARTICLES
@@ -39,7 +58,14 @@ $(window).scroll(function() {
     */
     if ($this.position().top <= scroll && $this.position().top + $this.height() > scroll) {
       // Remove all classes on body with color-
-      $this.find('.fade-text').delay(300).fadeIn(1000);
+      //$this.find('.fade-text').css({'display':'block', 'opacity':'0', 'top':'50px', 'position': 'relative'});
+      $this.find('.fade-text').animate({
+        opacity: '1'
+      }, { duration: 800, queue: false });
+      $this.find('.fade-text').animate({
+        top: '0px'
+      }, { duration: 500, queue: false });
+
       if($this.attr('id') === 'page-intro' || $this.attr('id') === 'page-about'){
         $('div#main').removeClass()
         $('div#main').addClass('color-black')

@@ -13,6 +13,7 @@ $red: #EF4444;
 $black: #212529;
 $black-dark: #101214;
 $white: #EEEEEE;
+$white-dark: rgb(163, 163, 163);
 $font-1: 'Lato', sans-serif;
 $font-2: ekselldisplay-large;
 
@@ -73,13 +74,19 @@ nav ul li {
 nav a {
     cursor: pointer;
     text-decoration: none;
-    color: #fff;
+    color: $white-dark;
+}
+
+nav a.active {
+    cursor: pointer;
+    text-decoration: none;
+    color: $white;
 }
 
 nav a:hover {
     cursor: pointer;
     text-decoration: none;
-    color: $yellow;
+    color: $white;
     transition: color 0.7s ease;
 }
 // [END navbar]
@@ -110,7 +117,10 @@ nav a:hover {
 }
 
 .fade-text {
-    display: none;
+    display: block;
+    position: relative;
+    opacity: 0;
+    top: 50px;
 }
 
 .line {
