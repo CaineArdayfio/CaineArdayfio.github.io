@@ -270,7 +270,8 @@ div#main {
                 font-size: 5em;
                 font-weight: 700;
                 //background: linear-gradient(80deg, #FFF 12.5%, hsl(98 100% 62%) 15%, hsl(204 100% 59%) 27.5%, #FFF 37.5%, $yellow 50%, $quidio-red 65%, white 80%);
-                background: linear-gradient(80deg, white 60.5%, hsl(98 100% 62%) 65%, $blue-light 72.5%, $yellow 83%, $red 87%, white 92%);
+                //background: linear-gradient(80deg, white 60.5%, hsl(98 100% 62%) 65%, $blue-light 72.5%, $yellow 83%, $red 87%, white 92%);
+                background: linear-gradient(80deg, white 15%, hsl(98 100% 62%) 30%, $blue-light 45%, $yellow 70%, $red 85%, white 95%);
                 background-size: 200% auto;
 
                 color: #000;
@@ -312,7 +313,7 @@ div#main {
         display: flex;
         align-items: center;
         justify-content: center;
-        background: linear-gradient(to top, #101214, black);// TODO: REMOVE
+        background: linear-gradient(to top, #101214 80%, black);// TODO: REMOVE
         .title {
             font-size: 2em;
             margin: 1em;

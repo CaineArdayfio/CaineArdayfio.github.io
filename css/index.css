@@ -247,7 +247,7 @@ div#main #page-intro #main-text {
 div#main #page-intro #main-text h1#linear-wipe {
   font-size: 5em;
   font-weight: 700;
-  background: linear-gradient(80deg, white 60.5%, #84ff3d 65%, #2eabff 72.5%, #F5E388 83%, #EF4444 87%, white 92%);
+  background: linear-gradient(80deg, white 15%, #84ff3d 30%, #2eabff 45%, #F5E388 70%, #EF4444 85%, white 95%);
   background-size: 200% auto;
   color: #000;
   background-clip: text;
@@ -283,7 +283,7 @@ div#main #page-about {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(to top, #101214, black);
+  background: linear-gradient(to top, #101214 80%, black);
 }
 div#main #page-about .title {
   font-size: 2em;

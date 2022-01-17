@@ -171,7 +171,11 @@ div.content {
             font-family: $font-1;
         }
     }
-
+    .jumbotron {
+        //font-family: $font-1;
+        //font-weight: 700;
+        color: black;
+    }
     div.logo {
         position: relative;
         max-width: 45%;

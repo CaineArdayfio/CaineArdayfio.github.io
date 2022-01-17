@@ -146,6 +146,9 @@ div.content #definition p {
   font-size: 1.3em;
   font-family: "Lato", sans-serif;
 }
+div.content .jumbotron {
+  color: black;
+}
 div.content div.logo {
   position: relative;
   max-width: 45%;
