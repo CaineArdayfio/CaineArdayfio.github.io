@@ -167,6 +167,10 @@ html, body {
         background: linear-gradient(45deg, #F5AF41, #F39C12, #F1C40F, $yellow);
     }
 
+    .circle#mit {
+        background: linear-gradient(27.5deg, #310A0F, #8D4210);
+    }
+
     .circle img {
         width: 70%;
     }
@@ -199,7 +203,7 @@ html, body {
     .triangle#learn-code {
         background-image: url(../assets/hadi.jpeg);
         background-size: 19em;
-        background-position: center center; 
+        background-position: center center;
         .banner {
             background-color: rgb(73, 91, 100);
         }
@@ -207,7 +211,7 @@ html, body {
     .triangle#dont-code {
         background-image: url(../assets/bird.jpg);
         background-size: 19em;
-        background-position: center center; 
+        background-position: center center;
         .banner {
             background-color: rgb(182, 172, 110);
         }
@@ -215,7 +219,7 @@ html, body {
     .triangle#sanskrit {
         background-image: url(../assets/sanskrit.jpeg);
         background-size: 19em;
-        background-position: center center; 
+        background-position: center center;
         .banner {
             background-color: rgb(46, 21, 20);
         }
@@ -223,7 +227,7 @@ html, body {
     .triangle#friends {
         background-image: url(../assets/friends.jpg);
         background-size: 19em;
-        background-position: center center; 
+        background-position: center center;
         .banner {
             background-color: $black;
         }

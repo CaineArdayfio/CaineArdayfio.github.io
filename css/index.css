@@ -147,6 +147,9 @@ html, body {
 .icons .circle#quidio {
   background: linear-gradient(45deg, #F5AF41, #F39C12, #F1C40F, #F5E388);
 }
+.icons .circle#mit {
+  background: linear-gradient(27.5deg, #310A0F, #8D4210);
+}
 .icons .circle img {
   width: 70%;
 }
