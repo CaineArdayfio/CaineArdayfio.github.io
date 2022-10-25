@@ -150,6 +150,9 @@ html, body {
 .icons .circle#mit {
   background: linear-gradient(27.5deg, #310A0F, #8D4210);
 }
+.icons .circle#augment {
+  background: linear-gradient(27.5deg, #bdbdbd, #fffaf7);
+}
 .icons .circle img {
   width: 70%;
 }
